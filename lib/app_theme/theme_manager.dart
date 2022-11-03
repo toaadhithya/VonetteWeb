@@ -1,4 +1,4 @@
-import 'package:admin/app_theme/storage_manager.dart';
+import 'package:vonette_web/app_theme/storage_manager.dart';
 import 'package:flutter/material.dart';
 
 class ThemeNotifier with ChangeNotifier {

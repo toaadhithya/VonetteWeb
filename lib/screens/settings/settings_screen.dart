@@ -1,5 +1,5 @@
-import 'package:admin/constants.dart';
-import 'package:admin/models/header.dart';
+import 'package:vonette_web/constants.dart';
+import 'package:vonette_web/models/header.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_switch/flutter_switch.dart';
 

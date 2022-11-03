@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:admin/constants.dart';
+import 'package:vonette_web/constants.dart';
 import 'package:flutter/material.dart';
 
 import '../../../models/header.dart';

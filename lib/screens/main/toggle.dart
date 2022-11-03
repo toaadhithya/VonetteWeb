@@ -1,6 +1,6 @@
-import 'package:admin/screens/controls/club_controls/club_controls.dart';
-import 'package:admin/screens/controls/user_controls/user_controls.dart';
-import 'package:admin/screens/settings/settings_screen.dart';
+import 'package:vonette_web/screens/controls/club_controls/club_controls.dart';
+import 'package:vonette_web/screens/controls/user_controls/user_controls.dart';
+import 'package:vonette_web/screens/settings/settings_screen.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';

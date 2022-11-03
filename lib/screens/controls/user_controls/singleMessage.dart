@@ -1,5 +1,5 @@
 // ignore_for_file: file_names, use_key_in_widget_constructors
-import 'package:admin/constants.dart';
+import 'package:vonette_web/constants.dart';
 import 'package:bubble/bubble.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';

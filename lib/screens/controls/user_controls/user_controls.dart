@@ -1,7 +1,7 @@
 import 'dart:math';
 
-import 'package:admin/constants.dart';
-import 'package:admin/screens/controls/user_controls/temp_messages.dart';
+import 'package:vonette_web/constants.dart';
+import 'package:vonette_web/screens/controls/user_controls/temp_messages.dart';
 import 'package:flutter/material.dart';
 
 import '../../../models/header.dart';

@@ -1,8 +1,8 @@
-import 'package:admin/constants.dart';
-import 'package:admin/screens/controls/club_controls/club_controls.dart';
-import 'package:admin/screens/controls/counselor_controls/counselor_controls.dart';
-import 'package:admin/screens/settings/settings_screen.dart';
-import 'package:admin/screens/controls/user_controls/user_controls.dart';
+import 'package:vonette_web/constants.dart';
+import 'package:vonette_web/screens/controls/club_controls/club_controls.dart';
+import 'package:vonette_web/screens/controls/counselor_controls/counselor_controls.dart';
+import 'package:vonette_web/screens/settings/settings_screen.dart';
+import 'package:vonette_web/screens/controls/user_controls/user_controls.dart';
 import 'package:flutter/material.dart';
 
 import 'components/side_menu.dart';

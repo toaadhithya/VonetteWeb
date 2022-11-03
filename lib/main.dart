@@ -1,6 +1,6 @@
-import 'package:admin/app_theme/theme_manager.dart';
-import 'package:admin/constants.dart';
-import 'package:admin/screens/main/main_screen.dart';
+import 'package:vonette_web/app_theme/theme_manager.dart';
+import 'package:vonette_web/constants.dart';
+import 'package:vonette_web/screens/main/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:scaled_app/scaled_app.dart';

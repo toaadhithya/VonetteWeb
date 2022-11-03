@@ -1,4 +1,4 @@
-import 'package:admin/screens/controls/user_controls/singleMessage.dart';
+import 'package:vonette_web/screens/controls/user_controls/singleMessage.dart';
 
 List tempMessages = [
   SingleMessage(
