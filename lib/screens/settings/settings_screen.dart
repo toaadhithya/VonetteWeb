@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_switch/flutter_switch.dart';
 
 class SettingsPage extends StatefulWidget {
-  const SettingsPage({Key key}) : super(key: key);
+  const SettingsPage({Key? key}) : super(key: key);
 
   @override
   State<SettingsPage> createState() => _SettingsPageState();
@@ -138,7 +138,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     //labelStyle: TextStyle(color: textColor),
                     floatingLabelStyle: TextStyle(color: Colors.blue)),
                 obscureText: true,
-                validator: (val) => val.isEmpty ? 'Enter Password' : null,
+                validator: (val) => val!.isEmpty ? 'Enter Password' : null,
                 onChanged: (val) {
                   // setState(() =>
                   //     //password = val
@@ -167,7 +167,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       //labelStyle: TextStyle(color: textColor),
                       floatingLabelStyle: TextStyle(color: Colors.blue)),
                   obscureText: true,
-                  validator: (val) => val.isEmpty ? 'Enter Password' : null,
+                  validator: (val) => val!.isEmpty ? 'Enter Password' : null,
                   onChanged: (val) {
                     // setState(() =>
                     //     //password = val

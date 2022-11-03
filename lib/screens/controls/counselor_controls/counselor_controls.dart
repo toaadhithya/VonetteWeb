@@ -8,7 +8,7 @@ import 'components/search_box.dart';
 import 'counselor_temp_values.dart';
 
 class CounselorControls extends StatefulWidget {
-  const CounselorControls({Key key}) : super(key: key);
+  const CounselorControls({Key? key}) : super(key: key);
 
   @override
   State<CounselorControls> createState() => _CounselorControlsState();
@@ -95,7 +95,7 @@ class _CounselorControlsState extends State<CounselorControls> {
                 ),
                 ValueListenableBuilder(
                   valueListenable: studentDataList,
-                  builder: (context, value, child) {
+                  builder: (context, List value, child) {
                     if (value.length == 0) {
                       //return Container();
                       return Expanded(
@@ -189,7 +189,8 @@ class _CounselorControlsState extends State<CounselorControls> {
                                         ),
                                         child: ValueListenableBuilder(
                                           valueListenable: studentDataList,
-                                          builder: (context, value, child) {
+                                          builder:
+                                              (context, List value, child) {
                                             return Column(
                                               crossAxisAlignment:
                                                   CrossAxisAlignment.start,
@@ -240,7 +241,7 @@ class _CounselorControlsState extends State<CounselorControls> {
                                   child: SingleChildScrollView(
                                     child: ValueListenableBuilder(
                                       valueListenable: studentDataList,
-                                      builder: (context, value, child) {
+                                      builder: (context, List value, child) {
                                         List dataList = value;
                                         // if (dataList.length == 0) {
                                         //   return SizedBox(
@@ -382,7 +383,7 @@ class _CounselorControlsState extends State<CounselorControls> {
   DataRow studentRow(List studentData) {
     //MaterialStateProperty<Color> color = Color(Colors.transparent)
     return DataRow(
-      onSelectChanged: (bool selected) {
+      onSelectChanged: (bool? selected) {
         setState(() {
           studentDataList.value = studentData;
         });

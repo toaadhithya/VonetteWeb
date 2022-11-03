@@ -9,7 +9,7 @@ import '../counselor_controls/components/search_box.dart';
 import 'user_temp_values.dart';
 
 class UserControls extends StatefulWidget {
-  const UserControls({Key key}) : super(key: key);
+  const UserControls({Key? key}) : super(key: key);
 
   @override
   State<UserControls> createState() => _UserControlsState();
@@ -160,7 +160,7 @@ class _UserControlsState extends State<UserControls> {
                 ),
                 ValueListenableBuilder(
                   valueListenable: studentDataList,
-                  builder: (context, value, child) {
+                  builder: (context, List value, child) {
                     if (value.length == 0) {
                       //return Container();
                       return Expanded(
@@ -255,7 +255,8 @@ class _UserControlsState extends State<UserControls> {
                                         ),
                                         child: ValueListenableBuilder(
                                           valueListenable: studentDataList,
-                                          builder: (context, value, child) {
+                                          builder:
+                                              (context, List value, child) {
                                             return Column(
                                               crossAxisAlignment:
                                                   CrossAxisAlignment.start,
@@ -306,7 +307,7 @@ class _UserControlsState extends State<UserControls> {
                                   child: SingleChildScrollView(
                                     child: ValueListenableBuilder(
                                       valueListenable: studentDataList,
-                                      builder: (context, value, child) {
+                                      builder: (context, List value, child) {
                                         List dataList = value;
                                         // if (dataList.length == 0) {
                                         //   return SizedBox(
@@ -451,7 +452,7 @@ class _UserControlsState extends State<UserControls> {
   DataRow studentRow(List studentData) {
     //MaterialStateProperty<Color> color = Color(Colors.transparent)
     return DataRow(
-      onSelectChanged: (bool selected) {
+      onSelectChanged: (bool? selected) {
         setState(() {
           studentDataList.value = studentData;
         });

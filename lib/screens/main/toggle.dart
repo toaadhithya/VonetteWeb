@@ -6,7 +6,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 class Toggle extends StatefulWidget {
-  const Toggle({Key key}) : super(key: key);
+  const Toggle({Key? key}) : super(key: key);
 
   @override
   State<Toggle> createState() => _ToggleState();

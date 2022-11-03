@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 class SearchBox extends StatelessWidget {
   final String hintText;
   const SearchBox({
-    Key key,
-    this.hintText,
+    Key? key,
+    required this.hintText,
   }) : super(key: key);
 
   @override

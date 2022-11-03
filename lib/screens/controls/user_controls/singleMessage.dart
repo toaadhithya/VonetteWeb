@@ -9,7 +9,7 @@ class SingleMessage extends StatelessWidget {
   final String message;
   final bool isMe;
   final dynamic time;
-  const SingleMessage({this.isMe, this.message, this.time});
+  const SingleMessage({required this.isMe, required this.message, this.time});
 
   @override
   Widget build(BuildContext context) {

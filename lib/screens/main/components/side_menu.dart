@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 class SideMenu extends StatelessWidget {
   final Function togglePage;
   const SideMenu({
-    Key key,
-    this.togglePage,
+    Key? key,
+    required this.togglePage,
   }) : super(key: key);
 
   @override

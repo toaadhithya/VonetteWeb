@@ -8,7 +8,7 @@ import '../club_controls/components/search_box.dart';
 import 'club_temp_values.dart';
 
 class ClubControls extends StatefulWidget {
-  const ClubControls({Key key}) : super(key: key);
+  const ClubControls({Key? key}) : super(key: key);
 
   @override
   State<ClubControls> createState() => _ClubControlsState();
@@ -95,7 +95,7 @@ class _ClubControlsState extends State<ClubControls> {
                 ),
                 ValueListenableBuilder(
                   valueListenable: studentDataList,
-                  builder: (context, value, child) {
+                  builder: (context, List value, child) {
                     if (value.length == 0) {
                       //return Container();
                       return Expanded(
@@ -190,7 +190,8 @@ class _ClubControlsState extends State<ClubControls> {
                                         ),
                                         child: ValueListenableBuilder(
                                           valueListenable: studentDataList,
-                                          builder: (context, value, child) {
+                                          builder:
+                                              (context, List value, child) {
                                             return Column(
                                               crossAxisAlignment:
                                                   CrossAxisAlignment.start,
@@ -241,8 +242,8 @@ class _ClubControlsState extends State<ClubControls> {
                                   child: SingleChildScrollView(
                                     child: ValueListenableBuilder(
                                       valueListenable: studentDataList,
-                                      builder: (context, value, child) {
-                                        List dataList = value;
+                                      builder: (context, List value, child) {
+                                        List? dataList = value;
                                         // if (dataList.length == 0) {
                                         //   return SizedBox(
                                         //     height: MediaQuery.of(context)
@@ -383,7 +384,7 @@ class _ClubControlsState extends State<ClubControls> {
   DataRow studentRow(List studentData) {
     //MaterialStateProperty<Color> color = Color(Colors.transparent)
     return DataRow(
-      onSelectChanged: (bool selected) {
+      onSelectChanged: (bool? selected) {
         setState(() {
           studentDataList.value = studentData;
         });
